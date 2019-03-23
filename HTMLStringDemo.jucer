@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="Edg45y" name="HTMLStringDemo" projectType="guiapp" jucerVersion="5.3.2">
+<JUCERPROJECT id="Edg45y" name="HTMLStringDemo" projectType="guiapp" jucerVersion="5.4.3">
   <MAINGROUP id="QB5sqt" name="HTMLStringDemo">
     <GROUP id="{8ACF9C6B-E936-C903-5112-78AEBC70432A}" name="Source">
       <FILE id="sK22vW" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
@@ -16,12 +16,12 @@
         <CONFIGURATION isDebug="0" name="Release"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
-        <MODULEPATH id="juce_core" path=""/>
-        <MODULEPATH id="juce_events" path=""/>
-        <MODULEPATH id="juce_graphics" path=""/>
-        <MODULEPATH id="juce_data_structures" path=""/>
-        <MODULEPATH id="juce_gui_basics" path=""/>
-        <MODULEPATH id="juce_gui_extra" path=""/>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../JUCE/modules"/>
       </MODULEPATHS>
     </XCODE_MAC>
     <VS2017 targetFolder="Builds/VisualStudio2017">
@@ -30,12 +30,12 @@
         <CONFIGURATION isDebug="0" name="Release"/>
       </CONFIGURATIONS>
       <MODULEPATHS>
-        <MODULEPATH id="juce_core" path=""/>
-        <MODULEPATH id="juce_events" path=""/>
-        <MODULEPATH id="juce_graphics" path=""/>
-        <MODULEPATH id="juce_data_structures" path=""/>
-        <MODULEPATH id="juce_gui_basics" path=""/>
-        <MODULEPATH id="juce_gui_extra" path=""/>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../JUCE/modules"/>
       </MODULEPATHS>
     </VS2017>
   </EXPORTFORMATS>

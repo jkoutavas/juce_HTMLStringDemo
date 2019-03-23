@@ -8,16 +8,25 @@
 
 #include "MainComponent.h"
 
+class MyBrowser : public WebBrowserComponent {
+    bool pageAboutToLoad(const String &newURL) override {
+        if (newURL == "https://www.heynow.com/") {
+            return !URL(newURL).launchInDefaultBrowser();
+        } else {
+            return true;
+        }
+    }
+};
+
 //==============================================================================
 MainComponent::MainComponent() {
-    _browser = std::make_unique<WebBrowserComponent>();
+    _browser = std::make_unique<MyBrowser>();
     addAndMakeVisible(_browser.get());
     setSize(600, 400);
 
 	MessageManager::callAsync([this] {
 		_browser->loadHTMLString(
-			"<!DOCTYPE html><html><body><h1>My First Heading</h1><p>My first "
-			"paragraph.</p></body></html>",
+			"<!DOCTYPE html><html><body><p style='font:20px verdana; color:#777b88'><b>Were you expecting to find a virus?</b><br><br>If so, please read our support article <a href='https://www.heynow.com'>Why didn't a scan find anything</a> to learn more.<p></body></html>",
 			"");
 	});
 }
