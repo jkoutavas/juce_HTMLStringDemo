@@ -26,7 +26,7 @@ MainComponent::MainComponent() {
 
 	MessageManager::callAsync([this] {
 		_browser->loadHTMLString(
-			"<!DOCTYPE html><html><body><p style='font:20px verdana; color:#777b88'><b>Were you expecting to find a virus?</b><br><br>If so, please read our support article <a href='https://www.heynow.com'>Why didn't a scan find anything</a> to learn more.<p></body></html>",
+			"<!DOCTYPE html><html><body><p style='font:20px verdana; color:#777b88'><b>Were you expecting to find a pot of gold?</b><br><br>If so, please visit us at <a href='https://www.heynow.com'>heynow.com</a> to learn more.<p></body></html>",
 			"");
 	});
 }
